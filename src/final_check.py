@@ -242,11 +242,9 @@ QUOTES = [
 
 # (document or "*", text in the document, [(source, needles, absent)]). A needle prefixed raw: is searched in the unnormalised file, and one prefixed page:N: only in page N of a PDF; a source prefixed repo: is read from the repository. The numbers inside the document text are accounted for by the fact.
 FACTS = [
-    ("README.md", r"prize \$500", [("site_40.html", ["$500"], [])]),
     ("NOTES.md", r"offers a prize of \$500", [("site_40.html", ["$500"], [])]),
     ("NOTES.md", "Its discussion thread has no comments.", [("thread_40.html", ["Comments (0)"], [])]),
     ("NOTES.md", "Its sources are [Er95] and [Er97c]", [("site_40.html", ["#40 : [Er95] [Er97c]"], [])]),
-    ("README.md", "The problem's own sources, [Er95] and [Er97c]", [("site_40.html", ["#40 : [Er95] [Er97c]"], [])]),
     ("NOTES.md", "The files for problems 28, 40 and 158 carry no `formal_proof` attribute", [("fc_28.lean", [], ["formal_proof"]), ("fc_40.lean", [], ["formal_proof"]), ("fc_158.lean", [], ["formal_proof"])]),
     ("NOTES.md", "the site's page for problem 40 says its statement is formalised and links this file on the main branch", [("site_40.html", ["Formalised statement? Yes", "raw:formal-conjectures/blob/main/FormalConjectures/ErdosProblems/40.lean"], [])]),
     ("NOTES.md", "Thomas Bloom wrote in the problem 28 thread", [("thread_28.html", ["I'd be interested to know. Thomas Bloom —"], [])]),
@@ -263,9 +261,7 @@ FACTS = [
     ("NOTES.md", "on February 1, 2026, R. Zeraoulia wrote", [("thread_158.html", ["counterexample to Problem 158 may exist. Zeraoulia Rafik — 23:05 on 01 Feb 2026"], [])]),
     ("NOTES.md", "linking a Zenodo record (DOI 10.5281/zenodo.18452185)", [("thread_158.html", ["raw:https://zenodo.org/records/18452185"], []), ("zenodo_18452185.json", ['"doi": "10.5281/zenodo.18452185"'], [])]),
     ("README.md", "the one computation posted on the closely related problem 158", [("site_158.html", ["Comments (1)"], []), ("thread_158.html", ["Zeraoulia Rafik — 23:05 on 01 Feb 2026"], [])]),
-    ("README.md", "the paper of Erdős and Rényi (1960)", [("obryant_math0407117v1.pdf", ["P. Erdős and A. Rényi, Additive properties of random sequences of positive integers, Acta Arith. 6 (1960)"], [])]),
     ("NOTES.md", "P. Erdős and A. Rényi (1960)", [("obryant_math0407117v1.pdf", ["P. Erdős and A. Rényi, Additive properties of random sequences of positive integers, Acta Arith. 6 (1960)"], [])]),
-    ("README.md", "Cilleruelo's preprint *Probabilistic constructions of B2[g] sequences*", [("cilleruelo_2008_B2g.pdf", ["Probabilistic constructions of B2[g] sequences"], [])]),
     ("README.md", "maintained by Thomas Bloom", [("site_40.html", ["T. F. Bloom, Erdős Problem #40"], []), ("thread_28.html", ["Thomas Bloom —"], [])]),
     ("NOTES.md", "The site is maintained by Thomas Bloom.", [("site_40.html", ["T. F. Bloom, Erdős Problem #40"], []), ("thread_28.html", ["Thomas Bloom —"], [])]),
     ("README.md", "[teorth/erdosproblems](https://github.com/teorth/erdosproblems) is licensed Apache 2.0", [("license_teorth_erdosproblems.txt", ["Apache License", "Version 2.0, January 2004"], [])]),
@@ -1139,7 +1135,7 @@ def plant_short_number(ctx):
 
 
 def plant_section(ctx):
-    _doc_sub(ctx, "README.md", "`NOTES.md` §9 says why", "`NOTES.md` §11 says why")
+    _doc_sub(ctx, "README.md", "`NOTES.md` §9, so no claim of novelty is made", "`NOTES.md` §11, so no claim of novelty is made")
 
 
 def plant_problem_ref(ctx):

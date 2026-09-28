@@ -68,7 +68,7 @@
     "terms": 10000,
     "last": 376437170,
     "vmax": 400000000,
-    "seconds": 27.9,
+    "seconds": 37.33,
     "list": "results/greedy_b2g_g2.txt",
     "list_sha256": "72ac94c682669923b43a49a1315503944c86eb06ee7ce753f22b31c62caf172e",
     "checkpoints": [
@@ -154,27 +154,27 @@
     "g1_matches_oeis_A005282": {
       "terms": 2000,
       "a_last": 96592680,
-      "seconds": 2.95,
+      "seconds": 3.7,
       "ok": true
     },
     "python_reimplementation": {
       "terms": 500,
-      "seconds": 2.0,
+      "seconds": 3.21,
       "ok": true
     },
     "b2_property": {
       "max_representations": 2,
-      "seconds": 1.89,
+      "seconds": 2.89,
       "ok": true
     },
     "cpu_limit": {
       "limit_s": 900,
       "trip_limit_s": 1,
       "trip_exit": -24,
-      "trip_seconds": 1.01,
+      "trip_seconds": 1.06,
       "ok": true
     },
-    "peak_rss_children_bytes": 754679808
+    "peak_rss_children_bytes": 439468032
   },
   "source_sha256": "2a31a208b94e3742eb5a9c9712de999b417090a1417da5c0ad1eaf14e510087a",
   "script_sha256": "91c483a8a57a8a852d22b39e31a2c91efd07514fb3f8220f584b29f0b2adea22"

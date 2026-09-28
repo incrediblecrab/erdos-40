@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-23T21:04:30-04:00",
+  "date": "2026-09-28T11:32:11-04:00",
   "lean": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
   "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
   "formal_conjectures": "e5f428182a3ee32dde401eceb4a94ba0382e8434",
@@ -28,7 +28,7 @@
       "step": null,
       "fail_line": null,
       "message_found": true,
-      "seconds": 124.2,
+      "seconds": 72.4,
       "ok": true
     },
     {
@@ -41,7 +41,7 @@
       "step": 0,
       "fail_line": "FAIL: formal_conjectures is at e5f428182a3ee32dde401eceb4a94ba0382e8434, lakefile.toml pins 0000000000000000000000000000000000000000",
       "message_found": true,
-      "seconds": 0.1,
+      "seconds": 0.0,
       "ok": true
     },
     {
@@ -67,7 +67,7 @@
       "step": 1,
       "fail_line": "FAIL: lake build exited non-zero",
       "message_found": true,
-      "seconds": 128.4,
+      "seconds": 46.9,
       "ok": true
     },
     {
@@ -80,7 +80,7 @@
       "step": 3,
       "fail_line": "FAIL: probe exited 1",
       "message_found": true,
-      "seconds": 213.2,
+      "seconds": 53.5,
       "ok": true
     },
     {
@@ -93,7 +93,7 @@
       "step": 3,
       "fail_line": "FAIL: probe exited 1",
       "message_found": true,
-      "seconds": 202.8,
+      "seconds": 61.8,
       "ok": true
     },
     {
@@ -106,7 +106,7 @@
       "step": 4,
       "fail_line": "FAIL: leanchecker rejected Erdos40.Equivalence",
       "message_found": true,
-      "seconds": 230.7,
+      "seconds": 130.2,
       "ok": true
     },
     {
@@ -119,12 +119,12 @@
       "step": 1,
       "fail_line": "FAIL: lake build exited non-zero",
       "message_found": true,
-      "seconds": 100.1,
+      "seconds": 40.0,
       "probe": {
         "exit": 1,
         "expect_message": "STATEMENT exists_iff: left side is not the right side of erdos_40.variants.weaker",
         "message_found": true,
-        "seconds": 50.7
+        "seconds": 24.0
       },
       "ok": true
     },
@@ -138,12 +138,12 @@
       "step": 1,
       "fail_line": "FAIL: lake build exited non-zero",
       "message_found": true,
-      "seconds": 100.6,
+      "seconds": 46.2,
       "probe": {
         "exit": 1,
         "expect_message": "STATEMENT exists_iff: right side is not Erdos40For (fun _ ↦ 1)",
         "message_found": true,
-        "seconds": 50.7
+        "seconds": 31.3
       },
       "ok": true
     },
@@ -157,12 +157,12 @@
       "step": 1,
       "fail_line": "FAIL: lake build exited non-zero",
       "message_found": true,
-      "seconds": 63.8,
+      "seconds": 34.8,
       "probe": {
         "exit": 1,
         "expect_message": "STATEMENT strong_implies_erdos_158: conclusion is not the right side of erdos_158",
         "message_found": true,
-        "seconds": 42.1
+        "seconds": 31.2
       },
       "ok": true
     },
@@ -176,12 +176,12 @@
       "step": 1,
       "fail_line": "FAIL: lake build exited non-zero",
       "message_found": true,
-      "seconds": 64.2,
+      "seconds": 34.8,
       "probe": {
         "exit": 1,
         "expect_message": "STATEMENT strong_iff_forall_B2: right side at g = 2 is not the right side of erdos_158 without A.Infinite",
         "message_found": true,
-        "seconds": 45.8
+        "seconds": 27.5
       },
       "ok": true
     },
@@ -195,7 +195,7 @@
       "step": 3,
       "fail_line": "FAIL: probe exited 1",
       "message_found": true,
-      "seconds": 197.1,
+      "seconds": 75.4,
       "ok": true
     }
   ],

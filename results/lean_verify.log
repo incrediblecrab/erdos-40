@@ -1,5 +1,5 @@
 # lean/verify.sh, run by scripts/reproduce.sh
-# date: 2026-09-23T21:01:29-0400
+# date: 2026-09-28T11:25:03-0400
 # Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)
 # platform: Darwin arm64
 == 0. formal-conjectures checkout ==
@@ -60,24 +60,24 @@ replayed Erdos40.Equivalence
 replayed Erdos40.Problem158
 
 PASS: 26 theorems on {propext, Classical.choice, Quot.sound}; statements match FormalConjectures at e5f428182a3ee32dde401eceb4a94ba0382e8434; probe clean; Erdos40.Basic Erdos40.Equivalence Erdos40.Problem158 replayed by the kernel.
-      180.51 real        19.73 user        46.13 sys
-          5124898816  maximum resident set size
+      422.98 real        26.90 user        77.84 sys
+          5275664384  maximum resident set size
                    0  average shared memory size
                    0  average unshared data size
                    0  average unshared stack size
-             2131745  page reclaims
-             1295257  page faults
+             2650222  page reclaims
+             2621169  page faults
                    0  swaps
                    0  block input operations
                    0  block output operations
                    0  messages sent
                    0  messages received
-                   0  signals received
-              241521  voluntary context switches
-             1284793  involuntary context switches
-            57205055  instructions retired
-            33787801  cycles elapsed
-             1704320  peak memory footprint
+                   3  signals received
+              223576  voluntary context switches
+             2737741  involuntary context switches
+            50048567  instructions retired
+            40365153  cycles elapsed
+             1769856  peak memory footprint
 # verify.sh exit 0
 # sha256 of the files it checked:
 # c5b38106155f86357e41e9f6adf949a56f2ad4fcca23e26b064b2edfcc5ca352 Erdos40.lean

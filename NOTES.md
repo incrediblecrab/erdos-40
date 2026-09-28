@@ -314,13 +314,13 @@ A negative answer for any one $g$ empties $\mathcal{G}$. A positive answer for a
 The last committed run, from `results/lean_verify.log`:
 
 <!-- generated: lean_summary -->
-Run on September 23, 2026 at 21:01:29 (UTC−04:00) with Lean 4.33.1 on Darwin arm64: `verify.sh` exited 0. All 26 listed theorems depend on no axiom beyond `propext`, `Classical.choice` and `Quot.sound`; the statements of `exists_iff`, `answerSet_nonempty_iff`, `strong_implies_erdos_28`, `strong_implies_erdos_158`, `strong_iff_forall_B2`, `weaker_iff_forall_B2` match formal-conjectures at the pin; the probe checked 74 constants and found 0 problems; and the kernel replayed `Erdos40.Basic`, `Erdos40.Equivalence` and `Erdos40.Problem158`. Wall time 180.51 s; maximum resident set size 5,124,898,816 bytes, as `/usr/bin/time -l` reports it.
+Run on September 28, 2026 at 11:25:03 (UTC−04:00) with Lean 4.33.1 on Darwin arm64: `verify.sh` exited 0. All 26 listed theorems depend on no axiom beyond `propext`, `Classical.choice` and `Quot.sound`; the statements of `exists_iff`, `answerSet_nonempty_iff`, `strong_implies_erdos_28`, `strong_implies_erdos_158`, `strong_iff_forall_B2`, `weaker_iff_forall_B2` match formal-conjectures at the pin; the probe checked 74 constants and found 0 problems; and the kernel replayed `Erdos40.Basic`, `Erdos40.Equivalence` and `Erdos40.Problem158`. Wall time 422.98 s; maximum resident set size 5,275,664,384 bytes, as `/usr/bin/time -l` reports it.
 <!-- end generated -->
 
 *Planted defects.* `lean/plants.py` tests `verify.sh`. For each case it copies the project to a scratch directory, links the built packages (a private copy of formal-conjectures for the two cases that alter it), applies one defect, and runs `verify.sh` there. A case passes only if `verify.sh` exits 1 at the expected step with the expected message; the control, an unmodified copy, must exit 0 and print `PASS:`. The four statement cases also run the probe alone and require it to catch the change. `results/lean_plants.json` records each case, with the hashes of the sources it tested.
 
 <!-- generated: plants_table -->
-Run on September 23, 2026 at 21:04:30 (UTC−04:00) with Lean 4.33.1 on macOS-27.0-arm64-arm-64bit-Mach-O: 12 of 12 cases behaved as expected.
+Run on September 28, 2026 at 11:32:11 (UTC−04:00) with Lean 4.33.1 on macOS-27.0-arm64-arm-64bit-Mach-O: 12 of 12 cases behaved as expected.
 
 | case | planted | expected | observed | probe alone |
 |---|---|---|---|---|
